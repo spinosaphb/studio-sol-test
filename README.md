@@ -4,7 +4,7 @@
 ## Project architecture:
 
 |Folder|Description|
-|:--:|:----:|:-----:|:------:|
+|:--:|:----:|
 |core|Essential functions|
 |models|Relational entities|
 |routers|API routes|
@@ -49,16 +49,4 @@ API Documentation:
 - [Swagger Doc](http://localhost:5000/api/doc)
 - [Red Doc](http://localhost:5000/api/docs)
 
-## Logic test explanation
-
-In `alpha_string.py` file, in `server` folder, i applied the following logic:
-
-1. First, I consider that for every set of Roman letters there is, necessarily, a non-Roman letter separating each sequence.
-    - So, for the following string: `AXXBLX`, the separator letter is `A` and `B`.
-
-2. Given a sequence with pattern: $(S_ks_nS_{k+1}s_{n+1})^*$, where:
-    - $S_{k}$ is k-th roman letters set;
-    - $s_n$ is a separator letter and, $S_k$ and $S_{k+1}$;
-    
-    1. if $S_{k}$ $\in$ $[I, V, X, L, C, D, M, IV, IX, XL,  XC, CD, CM]$
-        - then $S_{k}$ 
+Explanation of logic to solve the problem [here](explanation.pdf)
