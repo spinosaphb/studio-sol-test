@@ -1,0 +1,14 @@
+version: '3'
+services:
+  studiosol_backend:
+    build: .
+    image: studiosol_backend:0.0.1
+    container_name: "studiosol_server"
+    networks:
+      - studiosol_services
+    ports:
+      - 5000:5000
+    expose:
+      - 5000
+networks:
+  studiosol_services:
