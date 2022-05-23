@@ -1,7 +1,7 @@
 # <center> STUDIO SOL TEST API
 
 
-## Project architecture:
+## Project architecture _`/server`_:
 
 |Folder|Description|
 |:--:|:----:|
