@@ -42,7 +42,6 @@ def roman2decimal(number: str) -> int:
 
 def find_max_roman_number(alpha_string: str) -> Tuple[str, int]:
 
-    list_numbers = []
     roman_number = ""
     max_number = 0
     max_value = ""

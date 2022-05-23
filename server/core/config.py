@@ -2,7 +2,7 @@
 Environment variables module
 """
 
-API_PREFIX = "/api/studio-sol-test"
+API_PREFIX = "/api/studio-sol-test/rest"
 API_GRAPHQL_PREFIX = "/api/studio-sol-test/graphql"
 
 OPENAPI_URL = API_PREFIX + "/openapi.json"

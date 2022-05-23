@@ -1,5 +1,5 @@
 """
-MLModel Model
+Models
 """
 from pydantic import BaseModel
 import strawberry

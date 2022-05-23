@@ -1,7 +1,9 @@
-from typing import Tuple
+"""
+GraphQL Routes
+"""
+
 import strawberry
 
-from fastapi import FastAPI
 from strawberry.fastapi import GraphQLRouter
 from models.alpha_string import AlphaStringReponseGQL
 
@@ -21,4 +23,4 @@ class Mutation:
         return AlphaStringReponseGQL(value=value, number = number)
 
 schema = strawberry.Schema(query=Query, mutation=Mutation)
-graphql_app = GraphQLRouter(schema)
+router = GraphQLRouter(schema)

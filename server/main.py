@@ -13,8 +13,8 @@ DOTENV_PATH = join(dirname(__file__), '.env')
 load_dotenv(DOTENV_PATH)
 
 from core.config import API_PREFIX, OPENAPI_URL, DOCS_URL, REDOC_URL, API_GRAPHQL_PREFIX
-from routers import router as api_router, graphql_router
-
+#from routers import router as api_router, graphql_router
+from routers import rest_router, graphql_router
 gunicorn_logger = logging.getLogger("gunicorn")
 
 app = FastAPI()
@@ -28,7 +28,7 @@ app = FastAPI(
     redoc_url=REDOC_URL,
 )
 
-app.include_router(api_router, prefix=API_PREFIX)
+app.include_router(rest_router, prefix=API_PREFIX)
 app.include_router(graphql_router, prefix=API_GRAPHQL_PREFIX)
 
 if __name__ == "__main__":

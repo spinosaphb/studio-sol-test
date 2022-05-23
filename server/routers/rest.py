@@ -1,5 +1,5 @@
 """
-Machine Learning Model route
+API Rest Routers
 """
 from fastapi import APIRouter
 from models.alpha_string import AlphaString, AlphaStringReponse
